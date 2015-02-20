@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:attr/listDivider"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/ivMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mapa"
+        android:paddingBottom="8dp" />
+    
+    <TextView
+        style="@style/SectionName"
+        android:id="@+id/tvLabel"
+        android:layout_below="@id/ivMap"
+        android:text="@string/geoCoord" />
+        
+    <TextView 
+       	style="@style/ItemName"
+        android:id="@+id/tvLatLabel"
+        android:layout_below="@id/tvLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tvLat"
+        android:text="@string/latitude" />
+    
+    <TextView
+		style="@style/DigiFont"
+        android:id="@id/tvLat"
+		android:layout_below="@id/tvLabel"
+        android:layout_alignParentRight="true" />
+    
+    <TextView 
+	    style="@style/ItemName"
+        android:id="@+id/tvLonLabel"
+        android:layout_below="@id/tvLatLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tvLon"
+        android:text="@string/longitude" />
+    
+    <TextView
+    	style="@style/DigiFont"
+        android:id="@id/tvLon"
+		android:layout_below="@id/tvLat"
+        android:layout_alignParentRight="true" />
+    
+    <TextView
+        style="@style/ItemName"
+        android:id="@+id/tvAltLabel"
+        android:layout_below="@id/tvLonLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tvAlt"
+        android:text="@string/altitude" />
+    
+    <TextView
+    	style="@style/DigiFont"
+        android:id="@id/tvAlt"
+		android:layout_below="@id/tvLon"
+        android:layout_alignParentRight="true" />
+    
+    <TextView
+        style="@style/ItemName"
+        android:id="@+id/tvAccLabel"
+        android:layout_below="@id/tvAltLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tvAcc"
+        android:text="@string/accuracy" />
+    
+    <TextView
+    	style="@style/DigiFont"
+        android:id="@id/tvAcc"
+		android:layout_below="@id/tvAlt"
+        android:layout_alignParentRight="true" />
+    
+    <TextView
+        style="@style/SectionName"
+        android:id="@+id/tvLocLabel"
+        android:layout_below="@id/tvAccLabel"
+        android:text="@string/locator" />"
+
+	<TextView
+	    style="@style/MaidenheadFont"
+	    android:id="@+id/tvLoc"
+	    android:layout_below="@id/tvLocLabel" />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="SectionName" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:textColor">#0099CC</item>
+    </style>
+    
+    <style name="ItemName" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textColor">#0099CC</item>
+    </style>
+    
+    <style name="DigiFont" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textColor">#33B5E5</item>
+    </style>
+    
+    <style name="MaidenheadFont" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textColor">#33B5E5</item>
+
+    </style>
+          
+</resources>
